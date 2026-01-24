@@ -9,7 +9,7 @@ export default function TestimonialsPreview() {
     const previewTestimonies = testimonies.slice(0, 3);
 
     return (
-        <section className="py-24 bg-[var(--color-primary)]">
+        <section className="py-24 bg-white">
             <div className="container">
                 {/* Section Header */}
                 <motion.div
@@ -23,12 +23,12 @@ export default function TestimonialsPreview() {
                         Testimoni
                     </span>
                     <h2
-                        className="text-4xl md:text-5xl mb-4"
+                        className="text-4xl md:text-5xl mb-4 text-gray-900"
                         style={{ fontFamily: "var(--font-serif)" }}
                     >
                         Apa Kata Pelanggan Kami
                     </h2>
-                    <p className="text-[var(--color-muted)] max-w-xl mx-auto">
+                    <p className="text-gray-600 max-w-xl mx-auto">
                         Dengarkan dari mereka yang telah merasakan perbedaan KIAR.
                     </p>
                 </motion.div>
@@ -42,7 +42,7 @@ export default function TestimonialsPreview() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="bg-glass p-8 rounded-sm card-hover"
+                            className="bg-white p-8 rounded-sm card-hover border border-gray-100 shadow-sm"
                         >
                             {/* Stars */}
                             <div className="flex gap-1 mb-4">
@@ -55,7 +55,7 @@ export default function TestimonialsPreview() {
                             </div>
 
                             {/* Content */}
-                            <p className="text-[var(--color-soft-white)] mb-6 leading-relaxed">
+                            <p className="text-gray-600 mb-6 leading-relaxed">
                                 &ldquo;{testimony.content}&rdquo;
                             </p>
 
@@ -70,10 +70,10 @@ export default function TestimonialsPreview() {
                                     />
                                 </div>
                                 <div>
-                                    <h4 className="font-medium text-[var(--color-soft-white)]">
+                                    <h4 className="font-medium text-gray-900">
                                         {testimony.name}
                                     </h4>
-                                    <p className="text-sm text-[var(--color-muted)]">
+                                    <p className="text-sm text-gray-500">
                                         {testimony.role}
                                     </p>
                                 </div>

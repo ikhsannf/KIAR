@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Story() {
     return (
-        <section className="py-24 bg-[var(--color-charcoal)]">
+        <section className="py-24 bg-gray-50">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image Grid */}
@@ -49,7 +49,7 @@ export default function Story() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <span className="text-[var(--color-gold)] text-sm uppercase tracking-[0.3em] mb-4 block">
-                            Sejak 2021
+                            Sejak 2022
                         </span>
                         <h2
                             className="text-4xl md:text-5xl mb-8"
@@ -58,7 +58,7 @@ export default function Story() {
                             Tentang Kami
                         </h2>
 
-                        <div className="space-y-6 text-[var(--color-soft-white)] leading-relaxed">
+                        <div className="space-y-6 text-[var(--color-dark-gray)] leading-relaxed">
                             <p>
                                 KIAR adalah brand  yang menghadirkan kenyamanan sebagai prioritas utama.
                                 Kami percaya bahwa kualitas istirahat dimulai dari apa yang Anda kenakan.

@@ -15,7 +15,7 @@ export default function CallToAction() {
                         backgroundImage: `url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=1920&q=80')`,
                     }}
                 />
-                <div className="absolute inset-0 bg-black/80" />
+                <div className="absolute inset-0 bg-white/85" />
             </div>
 
             {/* Content */}
@@ -31,13 +31,13 @@ export default function CallToAction() {
                         Akses Eksklusif
                     </span>
                     <h2
-                        className="text-4xl md:text-5xl lg:text-6xl mb-6"
+                        className="text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900"
                         style={{ fontFamily: "var(--font-serif)" }}
                     >
                         Tingkatkan
                         <span className="text-gradient-gold block mt-2">Lemari Pakaianmu</span>
                     </h2>
-                    <p className="text-lg text-[var(--color-soft-white)] mb-10 leading-relaxed">
+                    <p className="text-lg text-gray-800 mb-10 leading-relaxed">
                         Bergabunglah dengan komunitas KIAR dan temukan dunia fashion premium.
                         Jadilah yang pertama tahu tentang koleksi baru, penawaran eksklusif, dan inspirasi gaya.
                     </p>

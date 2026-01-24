@@ -57,7 +57,7 @@ export default function ContactInfo() {
                     </div>
                     <div>
                         <h4
-                            className="text-lg mb-2"
+                            className="text-lg mb-2 text-[var(--color-soft-black)]"
                             style={{ fontFamily: "var(--font-serif)" }}
                         >
                             {detail.title}
@@ -74,7 +74,7 @@ export default function ContactInfo() {
             {/* Social Links */}
             <div className="pt-4">
                 <h4
-                    className="text-lg mb-4"
+                    className="text-lg mb-4 text-[var(--color-soft-black)]"
                     style={{ fontFamily: "var(--font-serif)" }}
                 >
                     Ikuti Kami
@@ -84,7 +84,7 @@ export default function ContactInfo() {
                         <a
                             key={social.label}
                             href={social.href}
-                            className="w-12 h-12 border border-white/10 flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-all duration-300"
+                            className="w-12 h-12 border border-gray-200 flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-all duration-300"
                             aria-label={social.label}
                         >
                             <social.icon className="w-5 h-5" />

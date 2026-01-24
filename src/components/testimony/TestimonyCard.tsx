@@ -17,7 +17,7 @@ export default function TestimonyCard({ testimony, index = 0 }: TestimonyCardPro
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-[var(--color-charcoal)] p-8 relative group hover:border-[var(--color-gold)]/30 border border-white/5 transition-all duration-300"
+            className="bg-white p-8 relative group hover:border-[var(--color-gold)]/50 border border-gray-100 shadow-sm transition-all duration-300"
         >
             {/* Quote Icon */}
             <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity">
@@ -35,7 +35,7 @@ export default function TestimonyCard({ testimony, index = 0 }: TestimonyCardPro
             </div>
 
             {/* Content */}
-            <p className="text-[var(--color-soft-white)] leading-relaxed mb-8 relative z-10">
+            <p className="text-gray-600 leading-relaxed mb-8 relative z-10">
                 &ldquo;{testimony.content}&rdquo;
             </p>
 
@@ -51,13 +51,13 @@ export default function TestimonyCard({ testimony, index = 0 }: TestimonyCardPro
                 </div>
                 <div>
                     <h4
-                        className="font-medium text-[var(--color-soft-white)]"
+                        className="font-medium text-gray-900"
                         style={{ fontFamily: "var(--font-serif)" }}
                     >
                         {testimony.name}
                     </h4>
                     <p className="text-sm text-[var(--color-gold)]">{testimony.role}</p>
-                    <p className="text-xs text-[var(--color-muted)] mt-1">{testimony.date}</p>
+                    <p className="text-xs text-gray-400 mt-1">{testimony.date}</p>
                 </div>
             </div>
         </motion.div>

@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function StoryPreview() {
     return (
-        <section className="py-24 bg-[var(--color-charcoal)]">
+        <section className="py-24 bg-gray-50">
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image */}
@@ -40,7 +40,7 @@ export default function StoryPreview() {
                             Cerita Kami
                         </span>
 
-                        <p className="text-[var(--color-soft-white)] leading-relaxed mb-6">
+                        <p className="text-[var(--color-dark-gray)] leading-relaxed mb-6">
                             Kiar adalah brand yang lahir dari komitmen pada kualitas, kerapian, dan kenyamanan.
                             Setiap produk dibuat melalui proses yang teliti, dari pemilihan bahan hingga sentuhan akhir, agar siap menemani momen penting dalam keseharian.
                         </p>

@@ -109,7 +109,7 @@ export default function Featured() {
                             variants={itemVariants}
                             className="group cursor-pointer"
                         >
-                            <div className="relative aspect-[3/4] overflow-hidden bg-[var(--color-charcoal)] mb-4">
+                            <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-4">
                                 <Image
                                     src={product.image}
                                     alt={product.name}
@@ -120,7 +120,7 @@ export default function Featured() {
 
                                 {/* Quick View Overlay */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span className="bg-[var(--color-gold)] text-black px-6 py-3 text-sm font-semibold tracking-wider uppercase">
+                                    <span className="bg-[var(--color-gold)] text-white px-6 py-3 text-sm font-semibold tracking-wider uppercase">
                                         Lihat Detail
                                     </span>
                                 </div>

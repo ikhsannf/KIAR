@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
             href="https://wa.me/6282299708462"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
             initial={{ scale: 0, opacity: 0 }}
             animate={{
                 scale: isVisible ? 1 : 0,
@@ -43,7 +43,7 @@ export default function WhatsAppButton() {
             whileTap={{ scale: 0.9 }}
             aria-label="Chat on WhatsApp"
         >
-            <WhatsAppIcon className="w-7 h-7 text-white" />
+            <WhatsAppIcon className="w-8 h-8 text-[#25D366]" />
         </motion.a>
     );
 }

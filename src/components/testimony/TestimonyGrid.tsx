@@ -24,12 +24,12 @@ export default function TestimonyGrid() {
                     transition={{ delay: 0.5 }}
                     className="mt-16 text-center"
                 >
-                    <div className="bg-[var(--color-charcoal)] p-12 border border-white/5 max-w-2xl mx-auto">
+                    <div className="bg-white p-12 border border-gray-100 shadow-sm max-w-2xl mx-auto">
                         <div className="w-16 h-16 mx-auto mb-6 bg-[var(--color-gold)]/10 rounded-full flex items-center justify-center">
                             <MessageSquarePlus className="w-8 h-8 text-[var(--color-gold)]" />
                         </div>
                         <h3
-                            className="text-2xl md:text-3xl mb-4"
+                            className="text-2xl md:text-3xl mb-4 text-[var(--color-soft-black)]"
                             style={{ fontFamily: "var(--font-serif)" }}
                         >
                             Bagikan Pengalaman KIAR Anda

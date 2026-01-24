@@ -29,14 +29,14 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b ${isScrolled ? "bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-transparent shadow-sm py-4" : "bg-transparent border-transparent py-6"
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "bg-white/95 backdrop-blur-lg shadow-sm py-4" : "bg-transparent py-6"
                 }`}
         >
             <div className="container flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="relative z-10">
                     <span
-                        className="text-3xl md:text-4xl tracking-wider"
+                        className="text-3xl md:text-4xl tracking-wider text-gray-900"
                         style={{ fontFamily: "var(--font-serif)" }}
                     >
                         KIAR
@@ -52,17 +52,17 @@ export default function Header() {
                             className={`relative text-sm font-medium tracking-wide uppercase transition-colors duration-300
                 ${pathname === link.href
                                     ? "text-[var(--color-gold)]"
-                                    : "text-[var(--color-soft-white)] hover:text-[var(--color-gold)]"
+                                    : "text-gray-800 hover:text-[var(--color-gold)]"
                                 }
               `}
                         >
                             {link.label}
                             {pathname === link.href && (
                                 <motion.span
-                                    layoutId="activeNav"
                                     className="absolute -bottom-1 left-0 right-0 h-[1px] bg-[var(--color-gold)]"
-                                    initial={false}
-                                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                                    initial={{ opacity: 0, scaleX: 0 }}
+                                    animate={{ opacity: 1, scaleX: 1 }}
+                                    transition={{ duration: 0.3 }}
                                 />
                             )}
                         </Link>
@@ -90,7 +90,7 @@ export default function Header() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.3 }}
-                            className="absolute top-0 left-0 right-0 bg-[var(--color-primary)] min-h-screen pt-24 px-6"
+                            className="absolute top-0 left-0 right-0 bg-white min-h-screen pt-24 px-6"
                         >
                             <nav className="flex flex-col gap-6">
                                 {navLinks.map((link, index) => (
@@ -106,7 +106,7 @@ export default function Header() {
                                             className={`text-2xl font-medium tracking-wide
                         ${pathname === link.href
                                                     ? "text-[var(--color-gold)]"
-                                                    : "text-[var(--color-soft-white)]"
+                                                    : "text-[var(--color-dark-gray)]"
                                                 }
                       `}
                                             style={{ fontFamily: "var(--font-serif)" }}

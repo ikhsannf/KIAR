@@ -2,26 +2,33 @@
 
 @layer base {
   :root {
-    /* Colors */
-    --color-primary: #000000;
-    --color-charcoal: #0a0a0a;
-    --color-graphite: #171717;
-    --color-surface: #1f1f1f;
+    /* Colors - Light Mode */
+    --color-primary: #ffffff;
+    --color-charcoal: #f8f8f8;
+    --color-graphite: #f0f0f0;
+    --color-surface: #e8e8e8;
 
+    --color-black: #0a0a0a;
+    --color-soft-black: #1a1a1a;
+    --color-dark-gray: #333333;
+    --color-muted: #666666;
+
+    --color-gold: #B8860B;
+    --color-gold-warm: #996515;
+    --color-gold-light: #D4AF37;
+
+    /* Legacy aliases */
     --color-white: #ffffff;
-    --color-soft-white: #f5f5f5;
-    --color-muted: #a1a1a1;
-
-    --color-gold: #D4AF37;
-    --color-gold-warm: #B8860B;
-    --color-gold-light: #F5DEB3;
+    --color-soft-white: #f8f8f8;
+    --color-black: #0a0a0a;
+    --color-soft-black: #1a1a1a;
 
     /* Fonts (Connected to Next.js Fonts) */
     /* --font-sans, --font-serif, --font-accent are injected by Next.js layout */
   }
 
   body {
-    @apply bg-[var(--color-primary)] text-[var(--color-white)];
+    @apply bg-[var(--color-primary)] text-[var(--color-black)];
     font-family: var(--font-sans);
     line-height: 1.6;
     overflow-x: hidden;
@@ -36,6 +43,7 @@
     font-family: var(--font-serif);
     font-weight: 500;
     line-height: 1.2;
+    color: var(--color-soft-black);
   }
 }
 
@@ -63,31 +71,31 @@
 
   /* Buttons */
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-3.5 bg-[#D4AF37] text-black font-semibold rounded-[2px] transition-all duration-300 relative overflow-hidden;
+    @apply inline-flex items-center justify-center px-8 py-3.5 bg-[#B8860B] text-white font-semibold rounded-[2px] transition-all duration-300 relative overflow-hidden;
   }
 
   .btn-primary:hover {
-    @apply bg-[#B8860B] -translate-y-0.5;
-    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+    @apply bg-[#996515] -translate-y-0.5;
+    box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-8 py-3.5 bg-transparent text-white font-medium border border-[#D4AF37] rounded-[2px] transition-all duration-300;
+    @apply inline-flex items-center justify-center px-8 py-3.5 bg-transparent text-[var(--color-black)] font-medium border border-[var(--color-gold)] rounded-[2px] transition-all duration-300;
   }
 
   .btn-secondary:hover {
-    @apply bg-[#D4AF37] text-black -translate-y-0.5;
+    @apply bg-[var(--color-gold)] text-white -translate-y-0.5;
   }
 
-  /* Glass Effects */
+  /* Glass Effects - Light Mode */
   .bg-glass {
-    @apply backdrop-blur-md border border-white/10;
-    background-color: rgba(23, 23, 23, 0.7);
+    @apply backdrop-blur-md border border-black/5;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   .bg-glass-dark {
-    @apply backdrop-blur-lg border border-white/5;
-    background-color: rgba(10, 10, 10, 0.8);
+    @apply backdrop-blur-lg border border-black/5;
+    background-color: rgba(248, 248, 248, 0.9);
   }
 
   /* Utilities */
@@ -99,7 +107,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
   }
 }
 

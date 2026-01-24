@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} ${spaceGrotesk.variable} antialiased font-sans bg-[var(--color-primary)] text-[var(--color-white)]`}>
+      <body className={`${inter.variable} ${playfair.variable} ${spaceGrotesk.variable} antialiased font-sans bg-[var(--color-primary)] text-[var(--color-black)]`}>
         {children}
         <WhatsAppButton />
       </body>

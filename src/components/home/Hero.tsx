@@ -12,10 +12,10 @@ export default function Hero() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: `url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1920&q=80')`,
+                        backgroundImage: `url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070')`,
                     }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white" />
             </div>
 
             {/* Content */}
@@ -34,10 +34,10 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-5xl md:text-7xl lg:text-8xl mb-6"
+                    className="text-5xl md:text-7xl lg:text-8xl mb-6 text-gray-900"
                     style={{ fontFamily: "var(--font-serif)" }}
                 >
-                    <span className="block">Hello...</span>
+                    <span className="block text-gray-900">Hello...</span>
                     <span className="text-gradient-gold">All your things, go in here</span>
                 </motion.h1>
 
@@ -69,7 +69,7 @@ export default function Hero() {
                 <motion.div
                     animate={{ y: [0, 10, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
-                    className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2"
+                    className="w-6 h-10 border-2 border-black/30 rounded-full flex justify-center pt-2"
                 >
                     <motion.div className="w-1.5 h-1.5 bg-[var(--color-gold)] rounded-full" />
                 </motion.div>

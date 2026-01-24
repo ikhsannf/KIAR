@@ -51,7 +51,7 @@ const itemVariants = {
 
 export default function Values() {
     return (
-        <section className="py-24 bg-[var(--color-primary)]">
+        <section className="py-24 bg-white">
             <div className="container">
                 {/* Section Header */}
                 <motion.div
@@ -65,7 +65,7 @@ export default function Values() {
                         Apa Yang Kami Perjuangkan
                     </span>
                     <h2
-                        className="text-4xl md:text-5xl"
+                        className="text-4xl md:text-5xl text-gray-900"
                         style={{ fontFamily: "var(--font-serif)" }}
                     >
                         Nilai-Nilai Kami
@@ -84,18 +84,18 @@ export default function Values() {
                         <motion.div
                             key={value.title}
                             variants={itemVariants}
-                            className="bg-[var(--color-charcoal)] p-8 md:p-10 border border-white/5 hover:border-[var(--color-gold)]/30 transition-colors duration-300"
+                            className="bg-white p-8 md:p-10 border border-gray-100 shadow-sm hover:border-[var(--color-gold)]/50 transition-colors duration-300"
                         >
                             <div className="w-14 h-14 bg-[var(--color-gold)]/10 rounded-sm flex items-center justify-center mb-6">
                                 <value.icon className="w-7 h-7 text-[var(--color-gold)]" />
                             </div>
                             <h3
-                                className="text-2xl mb-4"
+                                className="text-2xl mb-4 text-gray-900"
                                 style={{ fontFamily: "var(--font-serif)" }}
                             >
                                 {value.title}
                             </h3>
-                            <p className="text-[var(--color-muted)] leading-relaxed">
+                            <p className="text-gray-600 leading-relaxed">
                                 {value.description}
                             </p>
                         </motion.div>

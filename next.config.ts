@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // @ts-ignore
+  devIndicators: false,
 };
 
 export default nextConfig;

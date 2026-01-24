@@ -24,7 +24,7 @@ const footerLinks = {
 
 export default function Footer() {
     return (
-        <footer className="bg-[var(--color-charcoal)] border-t border-white/5">
+        <footer className="bg-gray-100 border-t border-gray-200">
             <div className="container py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand */}
@@ -46,7 +46,7 @@ export default function Footer() {
                                 <a
                                     key={social.label}
                                     href={social.href}
-                                    className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center
+                                    className="w-10 h-10 rounded-full border border-black/10 flex items-center justify-center
                     text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)]
                     transition-all duration-300"
                                     aria-label={social.label}
@@ -59,7 +59,7 @@ export default function Footer() {
 
                     {/* Navigation */}
                     <div>
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-white)] mb-6">
+                        <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-black)] mb-6">
                             Navigation
                         </h4>
                         <ul className="space-y-3">
@@ -78,7 +78,7 @@ export default function Footer() {
 
                     {/* Contact Info */}
                     <div>
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-white)] mb-6">
+                        <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-black)] mb-6">
                             Contact
                         </h4>
                         <ul className="space-y-4">
@@ -95,7 +95,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="mt-16 pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-sm text-[var(--color-muted)]">
                         © {new Date().getFullYear()} KIAR. All rights reserved.
                     </p>
