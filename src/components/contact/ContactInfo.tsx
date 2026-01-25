@@ -84,6 +84,8 @@ export default function ContactInfo() {
                         <a
                             key={social.label}
                             href={social.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-12 h-12 border border-gray-200 flex items-center justify-center text-[var(--color-muted)] hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] transition-all duration-300"
                             aria-label={social.label}
                         >

@@ -60,7 +60,7 @@ export const products: Product[] = [
         ],
         category: "Sets",
         size: "All Size",
-        isNew: true,
+        isNew: false,
     },
 
     // ============================================
@@ -94,7 +94,7 @@ export const products: Product[] = [
         ],
         category: "Sets",
         size: "All Size",
-        isNew: true,
+        isNew: false,
     },
 
     // ============================================
