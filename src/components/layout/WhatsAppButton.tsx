@@ -1,8 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-
 // WhatsApp Icon
 const WhatsAppIcon = ({ className }: { className?: string }) => (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor">
@@ -11,39 +8,15 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 export default function WhatsAppButton() {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsVisible(true);
-        }, 1000);
-        return () => clearTimeout(timer);
-    }, []);
-
     return (
-        <motion.a
+        <a
             href="https://wa.me/6282299708462"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{
-                scale: isVisible ? 1 : 0,
-                opacity: isVisible ? 1 : 0
-            }}
-            transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20
-            }}
-            whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.2, ease: "easeOut" }
-            }}
-            whileTap={{ scale: 0.9 }}
+            className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-300"
             aria-label="Chat on WhatsApp"
         >
             <WhatsAppIcon className="w-8 h-8 text-[#25D366]" />
-        </motion.a>
+        </a>
     );
 }

@@ -26,9 +26,9 @@ export default function Footer() {
     return (
         <footer className="bg-gray-100 border-t border-gray-200">
             <div className="container py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Brand */}
-                    <div className="lg:col-span-2">
+                    <div>
                         <Link href="/">
                             <span
                                 className="text-4xl tracking-wider text-[var(--color-gold)]"
@@ -57,40 +57,48 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Navigation */}
-                    <div>
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-black)] mb-6">
-                            Navigation
-                        </h4>
-                        <ul className="space-y-3">
-                            {footerLinks.navigation.map((link) => (
-                                <li key={link.href}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-[var(--color-muted)] hover:text-[var(--color-gold)] transition-colors duration-300"
-                                    >
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    {/* Navigation & Contact - 2 columns */}
+                    <div className="grid grid-cols-2 gap-6">
+                        {/* Navigation */}
+                        <div>
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-black)] mb-6">
+                                Navigation
+                            </h4>
+                            <ul className="space-y-3">
+                                {footerLinks.navigation.map((link) => (
+                                    <li key={link.href}>
+                                        <Link
+                                            href={link.href}
+                                            className="text-[var(--color-muted)] hover:text-[var(--color-gold)] transition-colors duration-300"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-                    {/* Contact Info */}
-                    <div>
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-black)] mb-6">
-                            Contact
-                        </h4>
-                        <ul className="space-y-4">
-                            <li className="flex items-center gap-3">
-                                <Phone className="w-5 h-5 text-[var(--color-gold)]" />
-                                <span className="text-[var(--color-muted)]">0822-9970-8462</span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Mail className="w-5 h-5 text-[var(--color-gold)]" />
-                                <span className="text-[var(--color-muted)]">di.kiar2526@gmail.com</span>
-                            </li>
-                        </ul>
+                        {/* Contact Info */}
+                        <div className="overflow-hidden">
+                            <h4 className="text-sm font-semibold uppercase tracking-wider text-[var(--color-soft-black)] mb-6">
+                                Contact
+                            </h4>
+                            <ul className="space-y-4">
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4 text-[var(--color-gold)] flex-shrink-0" />
+                                    <span className="text-[var(--color-muted)] text-sm">0822-9970-8462</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <Mail className="w-4 h-4 text-[var(--color-gold)] flex-shrink-0 mt-0.5" />
+                                    <a
+                                        href="mailto:di.kiar2526@gmail.com"
+                                        className="text-[var(--color-muted)] text-xs hover:text-[var(--color-gold)] transition-colors break-all"
+                                    >
+                                        di.kiar2526@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

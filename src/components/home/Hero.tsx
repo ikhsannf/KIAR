@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center isolate">
             {/* Background Image */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 -z-10">
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{
@@ -19,7 +19,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="container relative z-10 text-center pt-20">
+            <div className="container relative text-center pt-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}

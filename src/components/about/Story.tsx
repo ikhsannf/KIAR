@@ -9,8 +9,8 @@ export default function Story() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image Grid */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                         className="relative grid grid-cols-2 gap-4"
@@ -19,13 +19,13 @@ export default function Story() {
                             <div
                                 className="aspect-[3/4] bg-cover bg-center"
                                 style={{
-                                    backgroundImage: `url('https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80')`,
+                                    backgroundImage: `url('/images/content/image2.jpeg')`,
                                 }}
                             />
                             <div
                                 className="aspect-square bg-cover bg-center"
                                 style={{
-                                    backgroundImage: `url('https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=600&q=80')`,
+                                    backgroundImage: `url('/images/content/image3.jpeg')`,
                                 }}
                             />
                         </div>
@@ -33,7 +33,7 @@ export default function Story() {
                             <div
                                 className="aspect-[4/5] bg-cover bg-center"
                                 style={{
-                                    backgroundImage: `url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80')`,
+                                    backgroundImage: `url('/images/content/image1.jpeg')`,
                                 }}
                             />
                         </div>
@@ -43,8 +43,8 @@ export default function Story() {
 
                     {/* Content */}
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >

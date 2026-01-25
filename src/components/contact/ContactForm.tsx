@@ -65,8 +65,8 @@ export default function ContactForm() {
 
     return (
         <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-white p-8 md:p-12 border border-gray-200 shadow-sm"
@@ -120,7 +120,7 @@ export default function ContactForm() {
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder="John Doe"
+                            placeholder="Nama Lengkap"
                             required
                             disabled={status === "loading"}
                             className="w-full bg-gray-50 border border-gray-200 px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:border-[var(--color-gold)] focus:outline-none transition-colors disabled:opacity-50"
@@ -139,7 +139,7 @@ export default function ContactForm() {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="john@example.com"
+                            placeholder="dikiar@example.com"
                             required
                             disabled={status === "loading"}
                             className="w-full bg-gray-50 border border-gray-200 px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:border-[var(--color-gold)] focus:outline-none transition-colors disabled:opacity-50"

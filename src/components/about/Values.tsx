@@ -6,27 +6,27 @@ import { Gem, Leaf, Heart, Sparkles } from "lucide-react";
 const values = [
     {
         icon: Gem,
-        title: "Kualitas Tanpa Kompromi",
+        title: "Nyaman Sepanjang Hari",
         description:
-            "Setiap jahitan, setiap sambungan, setiap detail dibuat dengan sempurna. Kami hanya menggunakan bahan terbaik dan mempekerjakan pengrajin terampil yang berbagi passion kami untuk keunggulan.",
+            "Dirancang untuk memberi rasa tenang dan nyaman di setiap momen istirahatmu.",
     },
     {
         icon: Sparkles,
-        title: "Desain Abadi",
+        title: "Sederhana dan Elegan",
         description:
-            "Kami menciptakan karya yang melampaui musim dan tren. Desain kami dimaksudkan untuk dikenakan dan dihargai selama bertahun-tahun, menjadi lebih personal seiring waktu.",
+            "Desain minimalis yang timeless, mudah dipakai, dan selalu relevan.",
     },
     {
         icon: Leaf,
-        title: "Keberlanjutan",
+        title: "Kualitas Terpercaya",
         description:
-            "Fashion tidak boleh mengorbankan planet kita. Kami berkomitmen pada sumber etis, praktik berkelanjutan, dan mengurangi jejak lingkungan kami.",
+            "Bahan pilihan dengan proses yang rapi dan bertanggung jawab.",
     },
     {
         icon: Heart,
-        title: "Pelanggan Utama",
+        title: "Detail yang Diperhatikan",
         description:
-            "Kepuasan Anda adalah prioritas kami. Dari saat Anda menemukan KIAR hingga hari Anda mengenakan karya kami, kami berdedikasi untuk melampaui harapan Anda.",
+            "Setiap potongan dibuat dengan penuh ketelitian.",
     },
 ];
 

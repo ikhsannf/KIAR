@@ -11,8 +11,8 @@ export default function StoryPreview() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                         className="relative"
@@ -21,7 +21,7 @@ export default function StoryPreview() {
                             <div
                                 className="absolute inset-0 bg-cover bg-center"
                                 style={{
-                                    backgroundImage: `url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80')`,
+                                    backgroundImage: `url('/images/content/image1.jpeg')`,
                                 }}
                             />
                         </div>
@@ -31,8 +31,8 @@ export default function StoryPreview() {
 
                     {/* Content */}
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
